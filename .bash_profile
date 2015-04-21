@@ -32,7 +32,7 @@ alias s4='vim /etc/varnish/default.vcl'
 alias s5='vim /etc/httpd/conf.d/mod_rpaf.conf'
 
 
-alias killsound='sudo kill -9 `ps ax|grep 'coreaudio[a-z]' | awk '{print $1}'`'
+#alias killsound='sudo kill -9 `ps ax|grep 'coreaudio[a-z]' | awk {'print $1'}`'
 alias acheck='ansible-playbook --syntax-check --list-tasks'
 alias updatedb='/usr/libexec/locate.updatedb'
 alias yumsearch='yum list --enablerepo=epel'
