@@ -8,8 +8,6 @@ fi
 
 # User specific environment and startup programs
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 PATH=$PATH:$HOME/bin
 
