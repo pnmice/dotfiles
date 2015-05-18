@@ -70,8 +70,9 @@ userprompt () {
 local usercolor="\[\033[1;36m\]"
 [[ $EUID == 0 ]] && usercolor="\[\033[1;31m\]"
 PS1="$(pwd)"
-PS1="$usercolor\u\[\033[0m\]@\[\033[1;34m\]\H\[\033[0m\]:${PS1//\//$usercolor/\[\033[0;1m\]}$usercolor\\$\[\033[0m\]
-"
+PS1="$usercolor\u\[\033[0m\]@\[\033[1;34m\]\H\[\033[0m\]:${PS1//\//$usercolor/\[\033[0;1m\]}$usercolor\\$\[\033[0m\]"
+#for acrh linux
+#PS1="$usercolor\u\[\033[0m\]@\[\033[1;34m\]\H\[\033[0m\]:${PS1//\//$usercolor/\\\]}$usercolor\\$\[\033[0m\]"
 }
 PROMPT_COMMAND=userprompt
 
